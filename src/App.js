@@ -2,7 +2,6 @@ import './App.css';
 
 import { useEffect, useState } from "react";
 import Messages from "./Messages";
-import MainHeader from "./MainHeader";
 import Sidebar from "./Sidebar";
 
 function App() {
