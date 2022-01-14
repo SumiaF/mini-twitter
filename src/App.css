@@ -1,38 +1,65 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto:400,700&subset=cyrillic';
+
+
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  border-radius: .5rem;
+  border: .2rem solid black;
   min-height: 100vh;
-  display: flex;
+  margin: 2em 4em 2em 4em;
+  text-align: center;
+
+}
+.App-header {
+  display:flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.messages-parent{
+    font: 14px/1.4 Roboto, Helvetica, Arial, Tahoma, sans-serif;
+		font-weight: 300;
+		color: #292F33;
+    text-align: left;
+  
+}
+.messages-messagebody{
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.messages-content{
+  max-width:490px;
+  background: rgba(147, 188, 200, 0.075);
+  border-radius:.1rem;
+  padding: 1.5rem;
+  border-bottom: 1px solid #879aa7;
+  border-top: 1px solid #879aa7;
+  margin-bottom: 2rem ;
+}
+
+.messages-user{
+    width: 32px;
+		height: 32px;
+		background-size: 32px;
+    font-size: 1rem;
+    
+}
+
+#sidebar-userpic{
+  width:100px;
+  height:100px;
+}
+ul{
+  margin-right: 4rem;
+}
+
+ul, li{
+  list-style: none;
+}
+.pa {
+  padding: 2em;
+}
+.content-section{
+  display: flex;
+  justify-content: center;
 }
