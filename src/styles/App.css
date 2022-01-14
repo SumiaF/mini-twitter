@@ -1,8 +1,10 @@
 @import 'https://fonts.googleapis.com/css?family=Roboto:400,700&subset=cyrillic';
 
 .App {
+  background: #e6ecf0;
   border: .2rem solid black;
   border-radius: .5rem;
+  color:  #50b7f5;
   margin: 2em 4em 2em 4em;
   min-height: 100vh;
   text-align: center;

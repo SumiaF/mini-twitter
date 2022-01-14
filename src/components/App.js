@@ -8,7 +8,7 @@ function App() {
 
   const [user, setUser] = useState({
     name: "testUser",
-    profilePic: "userprofilepic.png",
+    profilePic: "images/userprofilepic.png",
     handle: "@mytestuser",
   });
   const [messages, setMessages] = useState();
