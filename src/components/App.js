@@ -1,7 +1,8 @@
 import "../styles/App.css";
 import { useEffect, useState } from "react";
-import Messages from "./Messages";
 import Sidebar from "./Sidebar";
+import Messages from "./Messages";
+import NewsSidebar from "./NewsSidebar";
 
 function App() {
   const [data, setData] = useState();
@@ -22,17 +23,12 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Mini Twitter</h1>
-      </header>
-      <div className="content-section pa">
-        <Sidebar
-          name={user.name}
-          profilePic={user.profilePic}
-          handle={user.handle}
-        />
+      <Sidebar />
+      <div className="main-feed">
+        <h2>This is the main feed of all users.</h2>
         <Messages />
       </div>
+      <NewsSidebar />
     </div>
   );
 }
