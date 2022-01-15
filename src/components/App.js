@@ -69,7 +69,7 @@ function App() {
       <main className="main-feed">
         <h2>This is the main feed of all users.</h2>
         <Routes>
-          <Route path="/" element={<MessageList messages={messages} />} />
+          <Route path="/" element={<MessageList messages={messages} users={users}/>} />
           <Route path="users/:id" element={<UserFeed />}/>
           <Route path="messages/:id" element={<MessageView />}/>
           <Route path="*" element={<NotFound />}/>
