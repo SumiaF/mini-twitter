@@ -1,15 +1,17 @@
 @import 'https://fonts.googleapis.com/css?family=Roboto:400,700&subset=cyrillic';
 
-.App {
-  background: #e6ecf0;
-  border: .2rem solid black;
-  border-radius: .5rem;
-  color:  #50b7f5;
-  margin: 2em 4em 2em 4em;
-  min-height: 100vh;
-  text-align: center;
-
+* {
+  box-sizing: border-box;
 }
+
+body {
+  height: 100vh;
+}
+
+#root {
+  height: 100%;
+}
+
 .App-header {
   align-items: center;
   display:flex;
@@ -17,28 +19,35 @@
   justify-content: center;
 }
 
-.messages-parent {
-  color: #292F33;
-  font: 14px/1.4 Roboto, Helvetica, Arial, Tahoma, sans-serif;
-	font-weight: 300;
-  text-align: left;
+.content-container {
+  background: #e6ecf0;
+  border: .2rem solid black;
+  border-radius: .5rem;
+  color:  #50b7f5;
+  text-align: center;
+  display: flex;
+  height: 100%;
 }
 
-.messages-content {
-  background: rgba(147, 188, 200, 0.075);
-  border-bottom: 1px solid #879aa7;
-  border-radius:.1rem;
-  border-top: 1px solid #879aa7;
-  margin-bottom: 2rem ;
-  max-width:490px;
-  padding: 1.5rem;
+aside, main, .news-sidebar {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: inherit;
 }
 
-.messages-user {
-	background-size: 32px;
-  font-size: 1rem;  
-	height: 32px;
-  width: 32px;
+aside {
+  align-items: flex-start;
+  width: 25%;
+}
+
+main {
+  width: 50%;
+}
+
+.news-sidebar {
+  border: 1px solid red;
+  width: 25%;
 }
 
 #sidebar-userpic {

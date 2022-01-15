@@ -15,8 +15,8 @@ ReactDOM.render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />} />
-        <Route path="user" element={<UserFeed />}/>
-        <Route path="message" element={<MessageView />}/>
+        <Route path="users/:id" element={<UserFeed />}/>
+        <Route path="messages/:id" element={<MessageView />}/>
         <Route path="*" element={<NotFound />}/>
       </Routes>
     </BrowserRouter>

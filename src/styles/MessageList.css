@@ -1,0 +1,20 @@
+.message-list {
+    width: 100%;
+}
+
+article {
+    display: flex;
+    padding: 1rem;
+}
+
+img {
+    border-radius: 50%;
+    flex-basis: 48px;
+    height: 48px;
+    margin-right: 12px;
+    width: 48px;
+}
+
+.message-body {
+    text-align: left;
+}

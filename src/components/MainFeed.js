@@ -6,13 +6,13 @@ import NewsSidebar from "./NewsSidebar";
 
 export default function MainFeed({}) {
   return (
-    <>
+    <div className="content-container">
       <Sidebar />
-      <div className="main-feed">
+      <main className="main-feed">
         <h2>This is the main feed of all users.</h2>
         <Messages />
-      </div>
+      </main>
       <NewsSidebar />
-    </>
+    </div>
   );
 }

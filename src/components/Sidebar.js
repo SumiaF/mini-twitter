@@ -6,7 +6,6 @@ export default function Sidebar({ name, profilePic, handle }) {
     <aside className="sidebar-userinfo">
        <ul>
         <li>
-          <HomeIcon />
           <a>Home</a>
         </li>
         <li>
