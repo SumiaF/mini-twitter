@@ -1,7 +1,9 @@
 import "../styles/App.css";
 import { useEffect, useState } from "react";
-import Messages from "./Messages";
 import Sidebar from "./Sidebar";
+import MessageList from "./MessageList";
+import NewsSidebar from "./NewsSidebar";
+import { dummyMainFeedMessages } from "../data/dummyMessages";
 
 function App() {
   const [data, setData] = useState();
@@ -12,8 +14,12 @@ function App() {
     handle: "@mytestuser",
   });
   const [messages, setMessages] = useState();
-  const url = "";
 
+  // TODO: 1. Start a loading indicator
+  // TODO: 2. Make an API call here with the userHandle
+  // TODO: 3. Pass the resulting messages in <MessageList /> instead of the dummy ones const url = "";
+
+  const url = 'backend.com/path/to/the/api'
   useEffect(() => {
     fetch(url)
       .then((res) => res.json())
@@ -21,18 +27,13 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Mini Twitter</h1>
-      </header>
-      <div className="content-section pa">
-        <Sidebar
-          name={user.name}
-          profilePic={user.profilePic}
-          handle={user.handle}
-        />
-        <Messages />
-      </div>
+    <div className="App content-container">
+      <Sidebar />
+      <main className="main-feed">
+        <h2>This is the main feed of all users.</h2>
+        <MessageList messages={dummyMainFeedMessages} />
+      </main>
+      <NewsSidebar />
     </div>
   );
 }

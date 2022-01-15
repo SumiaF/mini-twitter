@@ -1,13 +1,28 @@
-import { useState } from "react";
+import "../styles/Sidebar.css"
 
-export default function Sidebar({ name, profilePic, handle }) {
+export default function Sidebar() {
   return (
-    <div className="sidebar-userinfo">
-      <ul>
-        <li ><img id="sidebar-userpic" src={profilePic} alt="profilePic" /></li>
-        <li> Username: {name}</li>
-        <li> userhandle: {handle}</li>
+    <aside className="sidebar">
+       <ul>
+        <li>
+          <a>Home</a>
+        </li>
+        <li>
+          <a>Explore</a>
+        </li>
+        <li>
+          <a>Notifications</a>
+        </li>
+        <li>
+          <a>Messages</a>
+        </li>
+        <li>
+          <a>Profile</a>
+        </li>
+        <li>
+          <a>More</a>
+        </li>
       </ul>
-    </div>
+    </aside>
   );
 }

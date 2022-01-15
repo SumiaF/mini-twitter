@@ -1,0 +1,25 @@
+.sidebar {
+    padding-top: 8rem;
+}
+
+.sidebar ul {
+    margin: 0 0 0 1.5rem;
+    padding: 0.5rem;
+}
+
+.sidebar ul:not(:last-child) {
+    border-bottom: 1px solid #eee;
+}
+
+.sidebar li {
+    text-align: left;
+}
+
+.sidebar li a {
+    font-size: 1.25rem;
+    padding: 1rem 1.5rem 1rem 0;
+}
+
+.sidebar ul li a svg {
+    margin-right: 1.5rem;
+}
