@@ -1,58 +1,64 @@
 export const dummyUserMessages = [
     {
+        img_url: 'https://pbs.twimg.com/media/FJA-TI0akAAfx1Y?format=jpg&name=900x900',
+        _id: '',
         text: 'This is Abba Kyari the man in charge of the abduction and killing of Igbo youth in the SouthEast. He claims to be fighting insecurity but he is the cause of the insecurity!',
         user: {
             profile_pic: 'https://pbs.twimg.com/profile_images/1477682608230133760/koDbUlBA_400x400.jpg',
+            username: '',
             handle: 'AmBiafran'
         },
-        date: '13/01/2022',
-        img_url: 'https://pbs.twimg.com/media/FJA-TI0akAAfx1Y?format=jpg&name=900x900',
-        link_url: ''
+        date: '2022-01-14T17:45:43.774Z'
     },
     {
+        img_url: '',
+        _id: '',
         text: `It's true regional collaboration took time to take off. It's known #BokoHaram initially bought some of its weapons from some Chadian military. It's clear some officials in Cameroon, Niger & Chad benefited from business relations with BH (arguably, so did some Nigerian officials).`,
         user: {
-            profile_pic: 'https://pbs.twimg.com/profile_images/1477682608230133760/koDbUlBA_400x400.jpg',
-            handle: 'AmBiafran'
+            // profile_pic: 'https://pbs.twimg.com/profile_images/1477682608230133760/koDbUlBA_400x400.jpg',
+            username: 'AmBiafran',
+            handle: ''
         },
         date: '12/01/2022',
-        img_url: '',
-        link_url: 'https://t.co/rn7PqyjZqW'
     },
     {
+        img_url: 'https://pbs.twimg.com/card_img/1481988166571765760/Xe5KR01P?format=jpg&name=small',
+        _id: '',
         text: 'BREAKING: Boko Haram Attacks Nigerian Police Training School, Abducts Many Instructors #Bokoharam #EndNigeriaNowToSaveLives',
         user: {
-            profile_pic: 'https://pbs.twimg.com/profile_images/1477682608230133760/koDbUlBA_400x400.jpg',
+            // profile_pic: 'https://pbs.twimg.com/profile_images/1477682608230133760/koDbUlBA_400x400.jpg',
+            username: '',
             handle: 'AmBiafran'
         },
         date: '11/01/2022',
-        img_url: 'https://pbs.twimg.com/card_img/1481988166571765760/Xe5KR01P?format=jpg&name=small',
-        link_url: 'https://t.co/wItK2x88Ey'
     },
     {
+        img_url: '',
+        _id: '',
         text: 'Time is going to pass anyway the question is what are you doing with yours. One step at a time, make conscious effort to be and do better.',
         user: {
-            profile_pic: 'https://pbs.twimg.com/profile_images/1477682608230133760/koDbUlBA_400x400.jpg',
+            // profile_pic: 'https://pbs.twimg.com/profile_images/1477682608230133760/koDbUlBA_400x400.jpg',
+            username: '',
             handle: 'AmBiafran'
         },
         date: '13/01/2022',
-        img_url: '',
-        link_url: ''
     }
 ]
 
 export const dummyMainFeedMessages = [
     {
+        img_url: '',
+        _id: '',
         text: 'This is Abba Kyari the man in charge of the abduction and killing of Igbo youth in the SouthEast. He claims to be fighting insecurity but he is the cause of the insecurity!',
         user: {
-            profile_pic: 'https://pbs.twimg.com/profile_images/1477682608230133760/koDbUlBA_400x400.jpg',
+            // profile_pic: 'https://pbs.twimg.com/profile_images/1477682608230133760/koDbUlBA_400x400.jpg',
+            username: '',
             handle: 'AmBiafran'
         },
-        date: '13/01/2022',
-        img_url: '',
-        link_url: 'https://t.co/rn7PqyjZqW'
+        date: '13/01/2022'
     },
     {
+        img_url: '',
         text: `An idle mind is the devil's playground.
         
         An open mind is the cosmos' playground.`,
@@ -61,7 +67,6 @@ export const dummyMainFeedMessages = [
             handle: 'CicmilJovan'
         },
         date: '13/01/2022',
-        img_url: '',
         link_url: ''
     },
     {

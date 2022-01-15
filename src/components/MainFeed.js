@@ -1,8 +1,8 @@
 import DummyMainFeedMessages from "../data/dummyMessages";
 import { useState } from "react";
-import Messages from "./Messages";
 import Sidebar from "./Sidebar";
 import NewsSidebar from "./NewsSidebar";
+import MessageList from "./MessageList";
 
 export default function MainFeed({}) {
   return (
@@ -14,7 +14,7 @@ export default function MainFeed({}) {
           <input type="text" placeholder="What's happening?" />
           <button>Tweet</button>
         </form>
-        <Messages />
+        {/* <MessageList messages={messages}/> */}
       </main>
       <NewsSidebar />
     </div>
