@@ -67,7 +67,7 @@ function App() {
     <div className="App content-container">
       <Sidebar />
       <main className="main-feed">
-        <h2>This is the main feed of all users.</h2>
+        {/* <h2>This is the main feed of all users.</h2> */}
         <Routes>
           <Route path="/" element={<MessageList messages={messages} users={users}/>} />
           <Route path="users/:id" element={<UserFeed users={users} />}/>
