@@ -1,9 +1,14 @@
+import {  Route, Routes } from "react-router-dom";
+
 import "../styles/App.css";
 import { useEffect, useState } from "react";
 import Sidebar from "./Sidebar";
 import MessageList from "./MessageList";
 import NewsSidebar from "./NewsSidebar";
 import { dummyMainFeedMessages } from "../data/dummyMessages";
+import UserFeed from './UserFeed';
+import MessageView from './MessageView';
+import NotFound from './NotFound';
 
 function App() {
   console.log('app is loaded')
@@ -63,7 +68,12 @@ function App() {
       <Sidebar />
       <main className="main-feed">
         <h2>This is the main feed of all users.</h2>
-        <MessageList messages={messages}/>
+        <Routes>
+          <Route path="/" element={<MessageList messages={messages} />} />
+          <Route path="users/:id" element={<UserFeed />}/>
+          <Route path="messages/:id" element={<MessageView />}/>
+          <Route path="*" element={<NotFound />}/>
+        </Routes>
       </main>
       <NewsSidebar />
     </div>

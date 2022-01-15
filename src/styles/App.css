@@ -21,12 +21,11 @@ body {
 
 .content-container {
   background: #e6ecf0;
-  border: .2rem solid black;
   border-radius: .5rem;
   color:  #50b7f5;
-  text-align: center;
   display: flex;
   height: 100%;
+  text-align: center;
 }
 
 aside, main, .news-sidebar {

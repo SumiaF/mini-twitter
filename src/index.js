@@ -1,24 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import './styles/index.css';
 import App from './components/App';
 import reportWebVitals from './reportWebVitals';
-import UserFeed from './components/UserFeed';
-import MessageView from './components/MessageView';
-import NotFound from './components/NotFound';
 
 const rootElement = document.getElementById("root");
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="users/:id" element={<UserFeed />}/>
-        <Route path="messages/:id" element={<MessageView />}/>
-        <Route path="*" element={<NotFound />}/>
-      </Routes>
+      <App />
     </BrowserRouter>
   </React.StrictMode>,
   rootElement
